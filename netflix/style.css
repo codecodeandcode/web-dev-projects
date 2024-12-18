@@ -12,7 +12,7 @@
 }
 
 nav{
-    height: 70px;
+    height: 90px;
     max-width: 80vw;
     margin: auto;
     display: flex;
@@ -31,15 +31,21 @@ nav button{
     position: relative;
     z-index: 1;
     gap: 5px;
-}
-
-#lang{
-    background: transparent;
+    height: 35px;
+    width: 90px;
     color: white;
-    font-size: larger;
     padding-left: 9px;
     padding-right: 9px;
     border-radius: 5px;
+    font-weight: 600;
+}
+
+#lang{
+    background: transparent; 
+}
+
+#sign{
+    background-color: red;
 }
 
 .main .upper{
@@ -49,4 +55,47 @@ nav button{
     width: 100%;
     opacity: 0.75;
     background-color: black;
+}
+
+.welcome{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 80%;
+}
+
+span:first-child, span:nth-child(2){
+    font-weight: 900;
+    font-size: 7.56vh;
+}
+
+span:nth-child(4){
+    font-size: larger;
+    font-weight: 600;
+}
+
+span:last-child{
+    display: flex;
+    gap: 10px;
+}
+
+span div{
+    display: flex;
+    font-weight: 700;
+    font-size: larger;
+    background-color: red;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#holder{
+    width: 25vw;
+    background: transparent;
+    padding: 10px;
 }
