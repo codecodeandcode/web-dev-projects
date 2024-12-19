@@ -4,6 +4,30 @@
     font-family: noto sans;
 }
 
+
+@media (max-width: 540px) {
+
+    .main{
+        height: 120vh;
+    }
+
+    .welcome{
+        padding: 10px;
+    }
+
+    .welcome span{
+        text-align: center;
+    }
+
+    nav{
+        height: 50px;
+    }
+
+    nav img{
+        width: 50px;
+    }
+}
+
 .main{
     height: 100vh;
     background-image: url(assets/images/background.jpg);
@@ -98,4 +122,15 @@ span div{
     width: 25vw;
     background: transparent;
     padding: 10px;
+}
+
+.curve{
+    position: relative;
+    z-index: 1;
+    top: 14px;
+    height: 50px;
+    border-top-left-radius: 50% 75%;
+    border-top-right-radius: 50% 75%;
+    border-top: 5px solid red;
+    background: radial-gradient(rgb(1, 1, 61), black), black;
 }
