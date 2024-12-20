@@ -2,30 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: noto sans;
+    overflow-x: hidden;
 }
 
 
-@media (max-width: 540px) {
-
-    .main{
-        height: 120vh;
-    }
-
-    .welcome{
-        padding: 10px;
-    }
-
-    .welcome span{
-        text-align: center;
-    }
-
-    nav{
-        height: 50px;
-    }
-
-    nav img{
-        width: 50px;
-    }
+.above{
+    position: relative;
+    z-index: 1;
 }
 
 .main{
@@ -47,13 +30,9 @@ nav{
 nav img{
     color: red;
     width: 150px;
-    position: relative;
-    z-index: 1;
 }
 
 nav button{
-    position: relative;
-    z-index: 1;
     gap: 5px;
     height: 35px;
     width: 90px;
@@ -82,8 +61,6 @@ nav button{
 }
 
 .welcome{
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,22 +69,22 @@ nav button{
     height: 80%;
 }
 
-span:first-child, span:nth-child(2){
+.welcome span:first-child, span:nth-child(2){
     font-weight: 900;
     font-size: 7.56vh;
 }
 
-span:nth-child(4){
+.welcome span:nth-child(4){
     font-size: larger;
     font-weight: 600;
 }
 
-span:last-child{
+.welcome span:last-child{
     display: flex;
     gap: 10px;
 }
 
-span div{
+.welcome span div{
     display: flex;
     font-weight: 700;
     font-size: larger;
@@ -125,12 +102,54 @@ span div{
 }
 
 .curve{
-    position: relative;
-    z-index: 1;
-    top: 14px;
+    top: 13px;
     height: 50px;
+    border: 2px solid red;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
     border-top-left-radius: 50% 75%;
     border-top-right-radius: 50% 75%;
-    border-top: 5px solid red;
     background: radial-gradient(rgb(1, 1, 61), black), black;
+}
+
+main{
+    color: white;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+main span:nth-child(3){
+    display: flex;
+    gap: 30px;
+}
+
+main span:nth-child(3) div:first-child{
+    object-fit: contain;
+    overflow: hidden;
+}
+
+@media (max-width: 670px) {
+
+    .main{
+        height: 95vh;
+    }
+
+    .welcome{
+        padding: 10px;
+    }
+
+    .welcome span{
+        text-align: center;
+    }
+
+    nav{
+        height: 50px;
+    }
+
+    nav img{
+        width: 50px;
+    }
 }
